@@ -97,7 +97,9 @@ window.addEventListener('keydown', function (e) {
     var dataKeys = e.getAttribute('data-key').split(':');
     for(var j=0; j<dataKeys.length; j++) {
       var dataKey = dataKeys[j];
-      if(dataKey.split('__').sort(sortFn).join('__') === keyComb.sort(sortFn).join('__')) {
+      const keysA = dataKey.toLowerCase();
+      const keysB = keyComb.toLowerCase();
+      if(keysA === keysB) {
         e.click();
         break outerLoop;
       }
