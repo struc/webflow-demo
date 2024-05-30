@@ -1,0 +1,58 @@
+html, body {
+  margin: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+object {
+  flex: 1;
+  height: 100vh;
+}
+
+#formData {
+  min-width: 20vw;
+}
+
+#toolbar {
+  padding: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  background: #333;
+  color: #fff;
+}
+
+td, th {
+  border: 1px solid #333;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.p-2 {padding: 2rem;}
+
+
+#spinner {
+  display: none;
+  animation: spin infinite 1s;
+}
+#spinner.active {
+  display: inline-block;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+};
