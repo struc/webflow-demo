@@ -7,9 +7,20 @@
     <script src="pdf-lib.min.js" charset="utf-8"></script>
     <script src="zip-full.min.js" charset="utf-8"></script>
     <script src="FileSaver.min.js" charset="utf-8"></script>
-    <script src='https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/tesseract.js@5.1.0/dist/tesseract.min.js'></script>
+    <script type="module" src="./pdfjs/pdf.mjs" charset="utf-8"></script>
+    <script type="module" src="./pdfjs/pdf.worker.mjs" charset="utf-8"></script>
   </head>
   <body>
-    <script src="main.js" charset="utf-8"></script>
+
+    <form id="form">
+      <input type="file" name="file" id="" accept="application/pdf" required/>
+      <button type="submit">
+          <span id="spinner" class=""> </span>
+        Fix orientation
+      </button>
+
+    </form>
+    <script type="module" src="main.js" charset="utf-8"></script>
   </body>
 </html>

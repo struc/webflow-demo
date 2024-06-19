@@ -43,6 +43,13 @@ td, th {
 #spinner {
   display: none;
   animation: spin infinite 1s;
+  width: 8px;
+  height: 8px;
+  border-top: 4px solid red;
+  border-left: 4px solid orange;
+  border-bottom: 4px solid green;
+  border-right: 4px solid blue;
+  border-radius: 50%;
 }
 #spinner.active {
   display: inline-block;
@@ -56,3 +63,13 @@ td, th {
     transform: rotate(360deg);
   }
 };
+
+embed {
+  width: 80vw;
+  min-width: 80vw;
+  min-height: 80vh;
+}
+
+button {
+  vertical-align: middle;
+}
