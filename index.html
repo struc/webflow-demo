@@ -7,40 +7,9 @@
     <script src="pdf-lib.min.js" charset="utf-8"></script>
     <script src="zip-full.min.js" charset="utf-8"></script>
     <script src="FileSaver.min.js" charset="utf-8"></script>
-
+    <script src='https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js'></script>
   </head>
   <body>
-    <div class="d-flex">
-      <object id="pdfObj" data="" type="application/pdf"></object>
-      <form id="formData">
-        <div id="toolbar">
-          <button id="addRow" type="button">+</button>
-        </div>
-        <table id="detListTable">
-          <thead>
-            <tr>
-              <th>Occuppier</th>
-              <th>Full name</th>
-              <th>Address</th>
-              <th>Contact Number</th>
-              <th>Email Address</th>
-              <th></th>
-            </tr> 
-          </thead>
-          <tbody id="detList">
-          </tbody>
-        </table>
-
-        <div class="text-center p-2">
-          <button type="submit">Fill and download all</button>
-          <div class="p-2">
-            <svg id="spinner" style="animation: 2s spin linear infinite" viewBox="0 0 200 200" width="64" height="64" >
-              <path d="M50,50 A 50 50 0 0 1 150 150" stroke="crimson" fill="none" stroke-width="15"/>
-            </svg>
-          </div>
-        </div>
-      </form>
-    </div>
     <script src="main.js" charset="utf-8"></script>
   </body>
 </html>
